@@ -1,8 +1,5 @@
 <%@ include file="header.jsp" %>
 
- 
-
-
 
 
 <div id="nomh1">

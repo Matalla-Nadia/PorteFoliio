@@ -1,5 +1,6 @@
 <%@ include file="header.jsp" %>
  <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>  
+ 
 <div id="barre">
   <p>CSS <b>55%</b></p><span class="bar"><span class="css"></span></span>
   <p>HTML <b>50%</b></p><span class="bar"><span class="html"></span></span>

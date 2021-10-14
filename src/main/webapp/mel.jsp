@@ -1,7 +1,6 @@
 <%@ include file="header.jsp" %>
 
 <h1 id="mel">Manatia230@outlook.fr</h1>
-
 	<form id="form">
 		
 		<label>Nom</label>

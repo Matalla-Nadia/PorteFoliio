@@ -11,7 +11,6 @@
  
   </div>
 
-
  <div id="social">
   	<a ><img src="img/fb.png"></a>
   	<a href="mel.html"><img src="img/mail.png"></a>
