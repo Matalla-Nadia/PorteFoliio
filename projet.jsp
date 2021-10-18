@@ -1,12 +1,9 @@
 <%@ include file="header.jsp" %>
 
- 
-
-
 
 
 <div id="nomh1">
-<h1>Mes projets</h1>
+<h1> projets</h1>
 </div>
 <div id="liengit">
 	<label>Tableau Etudiants</label>

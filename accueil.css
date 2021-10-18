@@ -1,0 +1,43 @@
+@charset "ISO-8859-1";
+
+body{
+
+	font-family: 'Poppins', sans-serif;
+	background: url("img/fontecran4.jpg");
+	position: fixed;
+	background-position:100% ;
+}
+
+#htmlhome {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 4em;
+    margin-left: 54%;
+}
+#htmlhome3 {
+    margin-left: 14em;
+    border: solid 2px;
+    border-color: white;
+    font-size: 39px;
+    padding: 0 20px 0 20px;
+    border-radius: 250px;
+    background: white;
+    color: dimgrey;
+}
+#htmlhome2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    height: 39px;
+    padding: 0 0px 9px 0;
+    color: pink;
+    margin-left: 17em;
+}
+#htmlhome3:hover{
+	background-color: pink;
+}
+.container{
+	text-align: center;
+	margin: 16em 0 0 0;
+}
