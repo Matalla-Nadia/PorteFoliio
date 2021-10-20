@@ -1,12 +1,41 @@
 @charset "ISO-8859-1";
+ ::before, ::after{
+ box-sizing:border-box;
+ margin:0;
+ padding:0;
+ }
 /*Nav qui est commun à toute les pages*/
 body{
 
 	font-family: 'Poppins', sans-serif;
-	background: url("img/fontecran4.jpg");
-	position: fixed;
-	background-position:100% ;
+	background: url("img/fond5.jpg");
+	width:100%;
+	background-repeat: no-repeat;
+	height:100%;
+	background-size:cover;
+	position:fixed;
 }
+ /*nav{
+ 	grid-column:span 1;
+ 	text-align:center;
+ 	font-size:15px;
+ 	background-color: red;
+ 	
+ }*/
+ .navbar{
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+   border-bottom: solid 3px;
+   color: #ec8888;
+   
+ }
+ .navbar-links {
+  margin:0;
+  padding:0;
+  display:flex;
+ 
+ }
 li{
 
     display: inline;
@@ -43,21 +72,17 @@ img{
 #para{
 	font-size: 21px;
     font-family: sans-serif;
-    margin-left: 25em;
+    padding: 4em 4em 0 4em;
 }
-#para2{
-	font-size: 21px;
-    font-family: sans-serif;
-    margin-left: 25em;
-}
-#para3{
-	font-size: 21px;
-    font-family: sans-serif;
-    margin-left: 25em;
-}
+
 #paraentier{
-	width: 94em;
+	width: 100%;
 	color: white;
+	height:100vh;
+	display:flex;
+	/*grid-template-columns:300px;*/
+	align-content: stretch;
+    justify-content: flex-start;
 }
 span{
 	color: deeppink;
@@ -65,13 +90,11 @@ span{
 #titre0{
 	color: white;
 	border: solid 3px;
-	width: 5em;
-    height: 11%;
-    font-size: 55px;
-    padding: 0 0 0 29px;
-    margin-top: 2em;
+	width: 4em;
+    height: 19%;
+    font-size: 42px;
     float: left;
-    margin-left: 5%;
+    margin: 69px 116px 0 116px;
 }
 h1{
 	color: white;
@@ -154,8 +177,8 @@ h1{
     width: 11%;
     font-size:187%;
     height: 8%;
-    padding: 0 0px 14px 33px;
-    margin: 0px 0 0px 13px;
+    margin: 4em 0 0px 13px;
+    float: left;
 }
 #titre2 h2{
 	color: white;
@@ -168,6 +191,8 @@ h1{
 #social {
 	padding: 0 0 0 8em;
 	font-size: 5em;
+	float: left;
+    margin: 2em 0 0 0;
 }
 #social img{
 	display: inline;
@@ -193,7 +218,7 @@ h1{
     color: white;
     height: 3em;
     float: left;
-    margin: 0 0 0 120px;
+    margin: 4em 0 0 120px;
 
 }
 /*------------------------------------------------------------------------------------------------------------------*/
@@ -252,19 +277,4 @@ button{
 	float: left;
     margin: 59px 91px 6px 0;
 }
-/*#fleche img{
-	border-radius: 250px;
-}
-#p{
-	background: red;*/
 
-
-@media (max-width: 1615px){
-	 .nav{
-	 	 flex-direction: column;
-	 	 height: auto;
-	 }
-	 	li{
-	 		height: 50px;
-	 	}
-}

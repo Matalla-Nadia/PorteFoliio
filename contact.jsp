@@ -1,5 +1,5 @@
 <%@ include file="header.jsp" %>
-
+ 
  <div id="nom2">
  	
  </div>
@@ -10,7 +10,6 @@
   	<div id="fleche">
  
   </div>
-
 
  <div id="social">
   	<a ><img src="img/fb.png"></a>
