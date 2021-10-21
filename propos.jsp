@@ -1,9 +1,9 @@
     <%@ include file="header.jsp" %>
     <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
  
-    
+    <h2 id="titre0">A propos</h2>
 <div id="paraentier">
-   <h2 id="titre0">A propos</h2>
+   
 	<p id="para">Hello, je m'appelle Nadia Matalla, j'ai 30 ans et je suis actuellement en formation pour devenir<span>
 	            devellopeur</span> d'application web . J'ai d�couvert le monde du<span> web</span> en 2019, et apr�s 9 ans dans la m�me entreprise, 
 	            j'ai décidé de changer de voie et de me reconvertir professionnellement. Oui un pari risqué mais qui vaut le coup!

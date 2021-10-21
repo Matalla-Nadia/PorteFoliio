@@ -12,31 +12,32 @@
     <title>Mon portefolio</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<container>
+<nav class="navbar navbar-expand-lg navbar-light bg-light blocNav">
   <div class="container-fluid">
    
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
+      <ul class="navbar-nav navv">
+        <li class="nav-item item">
     	   <a href="<%= request.getContextPath()+"/accueil.jsp" %>"><img src="img/home.png"></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item item">
           <a href="<%= request.getContextPath()+"/propos.jsp" %>">A propos</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item item">
           <a href="<%= request.getContextPath()+"/competence.jsp" %>">Compétences</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item item">
           <a href="<%= request.getContextPath()+"/projet.jsp" %>">Projets</a>
         </li>
          
-        <li id="contactrose">
-          <a href="<%= request.getContextPath()+"/contact.jsp" %>"><img src="img/iconecontact.jpg"></a>
+        <li class="nav-item item" >
+          <a  id="contactrose" href="<%= request.getContextPath()+"/contact.jsp" %>"><img src="img/iconecontact.jpg"></a>
       </li>
       </ul>
     </div>
   </div>
 </nav>
-	
+</container>	
   </body>
   </html> 

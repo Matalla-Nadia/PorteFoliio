@@ -11,30 +11,39 @@ body{
 	background: url("img/fond5.jpg");
 	width:100%;
 	background-repeat: no-repeat;
-	height:100%;
+	
 	background-size:cover;
 	position:fixed;
 }
- /*nav{
- 	grid-column:span 1;
- 	text-align:center;
- 	font-size:15px;
- 	background-color: red;
- 	
- }*/
+
+ .container{
+   display:flex;
+   flex-direction:row;
+   flex-wrap:wrap;
+   justify-content:space-evenly
+ }
  .navbar{
    display:flex;
-   justify-content:space-between;
+   justify-content:space-evenly;
    align-items:center;
    border-bottom: solid 3px;
    color: #ec8888;
    
+ }
+ .nav-item{
+    display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-grow:1;
  }
  .navbar-links {
   margin:0;
   padding:0;
   display:flex;
  
+ }
+ .item{
+    color:red;
  }
 li{
 
@@ -54,7 +63,9 @@ ul{
 }
 a{
 	text-decoration: none;
-	color: dimgrey;
+    color: dimgrey;
+   
+
 }
 img{
 	height: 1em;
@@ -72,29 +83,30 @@ img{
 #para{
 	font-size: 21px;
     font-family: sans-serif;
-    padding: 4em 4em 0 4em;
+    padding: 4em 11em 0 0em;
+    margin-left: 5em;
 }
 
 #paraentier{
-	width: 100%;
-	color: white;
-	height:100vh;
-	display:flex;
-	/*grid-template-columns:300px;*/
-	align-content: stretch;
-    justify-content: flex-start;
+	width: 65%;
+    color: white;
+    display: flex;
+    align-content: stretch;
+    float: right;
 }
 span{
 	color: deeppink;
 }
 #titre0{
 	color: white;
-	border: solid 3px;
-	width: 4em;
-    height: 19%;
-    font-size: 42px;
+    border: solid 3px;
+    width: 12%;
+    height: 8%;
+    font-size: 40px;
     float: left;
-    margin: 69px 116px 0 116px;
+    margin: 34vh 0 7px 175px;
+    padding: 2px 6px 2px 6px;
+    text-align: center;
 }
 h1{
 	color: white;
@@ -200,8 +212,8 @@ h1{
 	padding: 34px 0 7px 0;
 }
 #contactrose img{
-	font-size: 55px;
-	margin: 3px 0 -16px 0;
+	font-size: 38px;
+	margin: 7px 0 -6px 0;
 	border-radius: 250px;
 }
 #bloc4{
@@ -277,4 +289,188 @@ button{
 	float: left;
     margin: 59px 91px 6px 0;
 }
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* media queries-----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* si inferieur ou egalea a 500px alors*/
+@media screen and  (min-width:0px) and (max-width:700px){
+	
+	.blocNav{
+	 background:pink;
+	}
+	.nav-item {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-around;
+    margin: 0;
+    height: 27px;
+    font-size:21px;
+    
+   }
+  a {
+    text-decoration: none;
+    color: dimgrey;
+    font-size: 61%;
+    }
+    #titre0 {
+    color: white;
+    border: solid 1px;
+    width: 7%;
+    height: 4%;
+    font-size: 7px;
+    float: left;
+    margin: 7px 0 7px 7px;
+    padding: 2px 6px 2px 6px;
+}
+}
+#para {
+    font-size: 12px;
+    font-family: sans-serif;
+    padding: 0em 3em 0 0em;
+  
+  }
+  #paraentier {
+    width: 100%;
+    color: white;
+    display: flex;
+    align-content: stretch;
+    float: right;
+}
+#contactrose img {
+    font-size: 27px;
+    margin: 7px 0 -6px 0;
+    border-radius: 250px;
+}
+ul {  /* pour centrer mes lien*/
+    text-align: center;
+    color: white;
+    margin: 0px 48px 0 0;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+@media  (min-width : 701px) {
+	 
+	.navv{
+	   background:blue;
+	   width: auto;
+	}
+	.nav-item {
+    display: inline;
+    align-items: center;
+    flex-grow: 1;
+    justify-content:space-evenly;
+    margin: 0;
+    font-size: 4vh;
+   }
+   .container{
+   display:flex;
+   flex-direction:row;
+   flex-wrap:wrap;
+   justify-content:space-evenly
+ }
+  a{
+	text-decoration: none;
+    color: dimgrey;
+    height: 50px;
+    flex-wrap: revert;
+    margin: 2vh;
+ }
+ #titre0 {
+    color: white;
+    border: solid 2px;
+    width: 8%;
+    height: 8%;
+    font-size: 17px;
+    float: left;
+    margin: 3vh 0 7px 29px;
+    padding: 2px 6px 2px 6px;
+}
+#paraentier {
+    width: 73%;
+    color: white;
+    display: flex;
+    float: right;
+   
+}
+#para {
+    font-size: 18px;
+    font-family: sans-serif;
+    padding: 1em 6em 0 0em;
+    margin-left: 0em;
+}
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: solid 3px;
+    color: #ec8888;
+    padding: 9px 0 9px 0;
+}
+/*-----------------------------------------------------------------------------------------------*/
+ @media  (min-width : 1100px){
+	
+	.navv{
+	   background:red;
+	   width: auto;
+	   padding: 0px 0 13px 0;
+	}
+	.nav-item {
+    display: inline;
+    align-items: center;
+    flex-grow: 1;
+    justify-content:space-evenly;
+    margin: 0;
+    }
+  .container{
+   display:flex;
+   flex-direction:row;
+   flex-wrap:wrap;
+   justify-content:space-evenly
+   }
+   a{
+	text-decoration: none;
+    color: dimgrey;
+    height: 50px;
+    flex-wrap: revert;
+    margin: 8vh; 
+   }
+   
+   #paraentier {
+    width: 73%;
+    color: white;
+    display: flex;
+    float: right;
+}
+
+#titre0 {
+    color: white;
+    border: solid 3px;
+    width: 12%;
+    height: 8%;
+    font-size: 34px;
+    float: left;
+    margin: 26vh 0 7px 101px;
+    padding: 2px 6px 2px 6px;
+}
+
+#para {
+    font-size: 22px;
+    font-family: sans-serif;
+    padding: 4em 5em 0 5em;
+    margin-left: 0em;
+   }
+   
+   #contactrose img {
+    font-size: 48px;
+    margin: 7px 0 -15px 0;
+    border-radius: 250px;
+}
+  } 
+
+}
+
+
 
